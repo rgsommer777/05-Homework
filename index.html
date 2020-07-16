@@ -45,7 +45,7 @@
       
   </body>
   <script>
-    // $(document).ready(function(){
+// $(document).ready(function(){
     
     //Time variables using moment.js CDN link
     let now = moment();
@@ -58,41 +58,41 @@
     //color code variables
     let past=true;
     let present=false;
-
  
-   //Display current date at top of app page
+//Display current date at top of app page
     $(currentDay).text(now.format('dddd, MMMM Do, YYYY'));  
  
-  //Check for stored entries
-let storedEntries = JSON.parse(localStorage.getItem('entryList'))
+//Check for stored entries
+  let storedEntries = JSON.parse(localStorage.getItem('entryList'))
 
-//for first time use set up local storage structure
-if (!storedEntries) {
+//Set object for first use if no object currently exists
+  if (!storedEntries) {
     storedEntries = {0: "", 1: "10 AM Meeting", 2: "", 3: "Lunch at Noon", 4: "", 5: "Test at 2PM", 6: "", 7: "", 8: "Miller Time!"}
-}
-//localStorage.setItem('entryList', JSON.stringify(storedEntries));
+  }
 
-// build entry input blocks
-for (var i = 0; i < 9; i++) {
+// Build hour labels by row
+  for (var i = 0; i < 9; i++) {
+  var hourLoop = moment().hour(i + 9).format('hA')
 
-    var hourLoop = moment().hour(i + 9).format('hA')
-    //set color variable for current hour = "present"
+//Set color variable for current hour = "present"
     if (hourLoop === hour) {
         past = false;
         present = true;
     }
-    //build the rows for entry input
+
+//Build the input blocks for entry input
     var thisRow = $('<div class="row">')
     $('.input-boxes').append(thisRow)
     //add the hour labels
     let hourBlock = $(`<div class="hour-lbls" data-index="${i}">`)
     hourBlock.text(`${hourLoop}`);
     thisRow.append(hourBlock)
-// }
-    //add entry blocks - including any stored entries from the storedEntries object
+ 
+//Add text entry blocks - including any stored entries from the storedEntries object
     let entryBlock = $(`<textarea class="input-box" data-index="${i}">`)
     entryBlock.text(storedEntries[i])
-    //add color classes for past / present /future hours
+
+//Add color classes for past / present /future hours
     if (past) {
         entryBlock.addClass("past")
     } else if (present) {
@@ -103,25 +103,25 @@ for (var i = 0; i < 9; i++) {
     }
     thisRow.append(entryBlock)
     
-    //add the save buttons and fontawesome "save" icon
+//Add the save buttons and fontawesome "save" icon
     let btn = $(`<button class="col-1 btn saveBtn" data-index="${i}">`)
     if (storedEntries[i].length!==3) {
     btn.append(`<i class="far fa-save fa-2x" data-index="${i}">`)
      }
     thisRow.append(btn)
- }
+  }
 
-// set click function to update the entry block line to local storage
-$('.saveBtn').click(function () {
+// Set save clicks to update the entry block line (where data indexes are equal to the reference index) to local storage
+  $('.saveBtn').click(function () {
     let index = $(this).attr('data-index');
     let txt = $(`textarea[data-index="${index}"]`)
-        if (txt.val()!= null) { //handles empty text case
+        if (txt.val()!= null) { //handle empty text
             storedEntries[index] = txt.val();
             localStorage.setItem('entryList', JSON.stringify(storedEntries));
          }
      }
  )
 
-    
+
   </script>
 </html>
