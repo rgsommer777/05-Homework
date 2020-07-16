@@ -50,5 +50,5 @@ GitHub link to project file repo: https://github.com/rgsommer777/05-Homework <br
 GitHub link to hosted page: https://rgsommer777.github.io/05-Homework/
 
 ## Screenshots   
-Index: <br>
+<img src="https://github.com/rgsommer777/05-Homework/blob/master/Assets/Screenshots/dayPlannerScreenshot.png" alt="Day Planner Screenshot> <br>
 
