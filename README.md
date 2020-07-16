@@ -47,7 +47,7 @@ Used moment.js for the first time and found it useful for time-based manipulatio
 
 ## Links
 GitHub link to project file repo: https://github.com/rgsommer777/05-Homework <br>
-GitHub link to hosted page: 
+GitHub link to hosted page: https://rgsommer777.github.io/05-Homework/
 
 ## Screenshots   
 Index: <br>
