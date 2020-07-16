@@ -38,12 +38,13 @@ The following animation demonstrates the application functionality:
 
 ## Files Included
 index.html<br>
+script.js<br>
 style.css<br>
 README.md<br>
 Assets/screenshots/dayPlannerScreenshot.png
 
 ## What I Learned
-Used moment.js for the first time and found it useful for time-based manipulations and formatting . Also had a chance to work more in depth with objects and writing and reading them from local storage.
+Used moment.js for the first time and found it useful for time-based manipulations and formatting . Also had a chance to work more in depth with objects and writing and reading them from local storage. Discovered template literals which made for more compact javascript statements.
 
 ## Links
 GitHub link to project file repo: https://github.com/rgsommer777/05-Homework <br>
