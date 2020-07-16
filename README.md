@@ -48,7 +48,7 @@ Assets/screenshots/dayPlannerScreenshot.png
 Used moment.js for the first time and found it useful for time-based manipulations and formatting 
 
 ## Links
-GitHub link to project file repo: <br>
+GitHub link to project file repo: https://github.com/rgsommer777/05-Homework <br>
 GitHub link to hosted page: 
 
 ## Screenshots   
