@@ -32,9 +32,9 @@ The following animation demonstrates the application functionality:
 
 
 ## My Approach
-1. Use jquery to replicate elements for text entry blocks and save buttons.
+1. Use jquery to replicate elements for text entry blocks and save buttons. First build the rows, then text blocks, then buttons.
 2. Use classes to color code the text entry blocks based on comparison of current hour to moment.js. (past, present, future).
-3. Save entries by line using an object (storedEntries) to enable persistance on refresh
+3. Save entries by line using an object (storedEntries) to enable persistance on refresh.
 
 
 
