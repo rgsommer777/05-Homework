@@ -36,8 +36,6 @@ The following animation demonstrates the application functionality:
 2. Use classes to color code the text entry blocks based on comparison of current hour to moment.js. (past, present, future).
 3. Save entries by line using an object (storedEntries) to enable persistance on refresh.
 
-
-
 ## Files Included
 index.html<br>
 style.css<br>
@@ -45,7 +43,7 @@ README.md<br>
 Assets/screenshots/dayPlannerScreenshot.png
 
 ## What I Learned
-Used moment.js for the first time and found it useful for time-based manipulations and formatting 
+Used moment.js for the first time and found it useful for time-based manipulations and formatting . Also had a chance to work more in depth with objects and writing and reading them from local storage.
 
 ## Links
 GitHub link to project file repo: https://github.com/rgsommer777/05-Homework <br>
