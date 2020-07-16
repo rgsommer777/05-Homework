@@ -43,8 +43,9 @@ index.html<br>
 style.css<br>
 README.md<br>
 Assets/screenshots/dayPlannerScreenshot.png
-## What I Learned
 
+## What I Learned
+Used moment.js for the first time and found it useful for time-based manipulations and formatting 
 
 ## Links
 GitHub link to project file repo: <br>
