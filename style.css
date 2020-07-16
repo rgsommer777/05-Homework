@@ -1,0 +1,130 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
+textarea{
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+}
+
+.lead{
+font-size: 24px;
+font-weight: 800;
+}
+
+
+.description{
+  white-space: pre-wrap;
+}
+
+.container{
+  display:flex;
+  /* flex-wrap: nowrap; */
+  padding:0px;
+  border-radius: 15px;
+  /* border: 1px solid black; */
+  height:1000px;
+  width:1000px;
+ 
+}
+
+.hour-lbls{
+  flex:3;
+  /* background: rgb(236, 149, 149); */
+  padding: 70px 40px;
+  margin: -25px -90px;
+  font-size: 28px;
+  font-weight:800;
+  text-justify: center;
+  text-align: left;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px 1px 1px 1px solid black;
+  height:30px;
+  width:60px;
+ 
+}
+
+.input-boxes{
+  /* background: red; */
+  color:black;
+  font-size: 28px;
+  margin: 0px;
+  padding:0px;
+  border-radius: 15px;
+  /* border: 1px solid black; */
+  height:920px;
+  width: 900px;
+ 
+}
+
+.input-box{
+  color:black;
+  font-size: 28px;
+  margin: 10px -40px;
+  padding:5px 15px;
+  /* border-radius: 15px; */
+  border: 1px solid black; 
+  height:97px;
+  width: 750px;
+ 
+}
+
+
+.row {
+  white-space: pre-wrap;
+  height: 100px;
+  border-top: 1px solid white;;
+}
+
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+}
+
+.past {
+  background-color: #d3d3d3;
+  color: black;
+}
+
+.present {
+  background-color: #ff6961;
+  color: black;
+}
+
+.future {
+  background-color: #77dd77;
+  color: black;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06AED5;
+  color: white;
+  height:97px;
+  width:100px;
+  margin:10px 30px 30px 40px;
+  padding:10px 10px 10px 10px;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all .3s ease-in-out;
+}
